@@ -55,18 +55,20 @@ li {
 .menu-img{
     display: none;
 }
-.login-butt{
+.login-butt {
     width: 139px;
-    height: 52px;
-    opacity: 1;
-    top: 33px;
-    left: 919px;
-    color: #FFFFFF;
-    background-color: #181818;
-    border: 1px solid #FFFFFF;
-    box-shadow: 0 4px 31px 0 #00000026;
-
+    height: 45px;
+    border: 2px solid #FFFFFF;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    outline: none;
+    position: relative;
+    overflow: hidden;
 }
+
+
 .thought-div{
     margin-top: 120px;
     display: grid;
@@ -76,7 +78,7 @@ li {
     justify-items: center;
 
 }
-.thought-p{
+.thought-h1{
     width: 780px;
     margin:0;
     opacity: 1;
@@ -116,6 +118,7 @@ li {
     margin: 0 35px 0 0;
 }
 
+
 .more-btn{
     width: 140px;
     height: 50px;
@@ -143,8 +146,89 @@ li {
 .login-menu-div{
     display: flex;
     margin: 23px 0 0 0;
+}
+
+.freatures-div{
+    margin-top: 100px;
+}
+
+.freatures-description{
+    display:grid;
+    align-content: center;
+    justify-content: center;
+}
+.freatures-h2{
+    color: #FFFFFF;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    opacity: 1;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 62px;
+    margin: 0 0 27px 0;
 
 }
+.freatures-p{
+    color: #FFFFFF;
+    width: 582px;
+    height: 60px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+}
+.explanation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.explanation-img img{
+    max-width: 784px;
+    width: 100%;
+}
+.explanation-texts{
+    color: #FFFFFF;
+    margin: 54px 0 0 0
+}
+.explanation-text {
+    margin: 10px 0 0 0;
+}
+.explanation-cont{
+    display: flex;
+    width: 200px;
+    height: 60px;
+    opacity: 1;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+.alien-img{
+    width: 33px;
+    height: 60px;
+}
+
+.explanation-cont p{
+    margin:10px 0 0 10px;
+}
+.explanation-cont-expl {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    width: 269px;
+    height: 116px;
+    gap: 10px;
+    padding: 10px;
+    margin: 0 0 37px 0;
+
+}
+.explanation-cont-expl p{
+    margin:15px 0 0 0;
+}
+
+
 
 @media screen  and (max-width: 1025px) {
     .navigation{
@@ -167,7 +251,7 @@ li {
 
 @media screen  and (max-width: 980px) {
 
-    .thought-p{
+    .thought-h1{
         width: 780px;
         font-size: 60px;
     }
@@ -176,9 +260,27 @@ li {
         height: 60px;
         font-size: 15px;
     }
+    .explanation-img{
+        display:grid;
+        align-items: center;
+        justify-content: center;
+    }
+    .explanation-texts{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen  and (max-width: 940px) {
+    .explanation {
+        display: unset;
+    }
+    .freatures-description{
+        margin-bottom: 50px ;
+    }
 }
 @media screen  and (max-width: 700px) {
-    .thought-p{
+    .thought-h1{
         width: 650px;
         font-size: 50px;
         line-height: 70px;
@@ -188,6 +290,17 @@ li {
         height: auto;
         font-size: 15px;
     }
+    .freatures-h2{
+        margin-bottom: 30px;
+    }
+    .freatures-p{
+        width: 80%;
+        height: auto;
+        display: grid;
+        align-content: center;
+        justify-items: center;
+        margin: 0 auto;
+    }
 }
 @media screen  and (max-width: 570px) {
     .thought-div{
@@ -195,7 +308,7 @@ li {
         justify-items: center;
 
     }
-    .thought-p{
+    .thought-h1{
         width: 294px;
         font-size: 50px;
         line-height: 70px;
