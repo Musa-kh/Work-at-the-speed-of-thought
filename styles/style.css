@@ -258,6 +258,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
+    width:auto;
 }
 .content-header {
     display: grid;
@@ -267,6 +268,7 @@ li {
     text-align: center;
     margin-top: 100px;
     margin-bottom: 40px;
+    width: auto;
 }
 h3{
     font-weight: 400;
@@ -371,7 +373,7 @@ h3{
 }
 .gallery-header {
     text-align: center;
-    width: 591px;
+    width: auto;
     height: 162px;
     opacity: 1;
     margin-bottom: 44px;
@@ -400,13 +402,30 @@ h4{
 
 }
 .gallery-img {
-    gap :20px;
+    gap: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin:  0 0 44px 0;
-
-
+    width: auto;
+}
+.gallery-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 12px;
+}
+.gallery-container2 {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 12px;
 }
 .gallery-img img{
     border-radius:12px;
@@ -537,7 +556,7 @@ h4{
         line-height: 70px;
     }
     .hero-description {
-        width: 322px;
+        width: 320px;
         opacity: 1;
     }
     .cta-container {
