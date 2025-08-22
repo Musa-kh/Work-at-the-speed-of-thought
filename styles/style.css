@@ -492,10 +492,19 @@ h5{
 }
 .img-app {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 74px;
+    gap: 70px;
     padding: 10px;
+    width: 90%;
+
 }
+
+.img-app img {
+    width: 10%;
+    height: auto;
+}
+
 
 .post-btn{
     width: 176px;
@@ -566,12 +575,7 @@ h5{
     .features-header {
         margin-bottom: 50px;
     }
-    .img-app {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 30px;
-    }
+
 }
 
 @media screen and (max-width: 700px) {
@@ -603,17 +607,7 @@ h5{
     .form-description {
         font-size: 14px;
     }
-    .img-app {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 40px;
-    }
 
-    .img-app img {
-        width: 10%;
-        height: auto;
-    }
 }
 @media screen and (max-width: 670px) {
     .gallery-container2 {
@@ -669,6 +663,7 @@ h5{
          align-items: center;
      }
     .img-app {
+        gap: 30px;
         width: 300px;       /* адаптивная ширина */
 
     }
