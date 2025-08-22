@@ -370,11 +370,12 @@ h3{
     display: block;
     align-items: center;
     justify-items: center;
+    margin: 0 0 50px 0;
 }
 .gallery-header {
     text-align: center;
     width: auto;
-    height: 162px;
+    height: auto;
     opacity: 1;
     margin-bottom: 44px;
 }
@@ -451,7 +452,67 @@ h4{
     line-height: 25px;
 
 }
-/* Responsive */
+/*Partners-section*/
+.partners-section{
+    padding: 0 0 50px 0;
+}
+.partners-wrapper{
+    margin: 100px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.partners-info{
+    color: #FFFFFF;
+    margin: 0 0 50px 0;
+}
+h5{
+    max-width:203px ;
+    width: 90%;
+    height: auto;
+    opacity: 1;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 62px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.partners-info p{
+    max-width: 571px ;
+    width:90%;
+    height: auto;
+    opacity: 1;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+.img-app {
+    display: flex;
+    justify-content: center;
+    gap: 74px;
+    padding: 10px;
+}
+
+.post-btn{
+    width: 176px;
+    height: 52px;
+    margin: 50px 0 0 0;
+    background-color: #1a1a1a;
+    border: 2px solid #FFFFFF;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+}
 
 @media screen and (max-width: 1025px) {
     .main-nav {
@@ -470,8 +531,6 @@ h4{
         width: 110px;
         height: 44px;
     }
-
-
     .gallery-img img {
         width: 30%;
         max-width: 200px; /* страховка чтобы не растягивались слишком на больших экранах */
@@ -507,6 +566,12 @@ h4{
     .features-header {
         margin-bottom: 50px;
     }
+    .img-app {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -537,6 +602,17 @@ h4{
     }
     .form-description {
         font-size: 14px;
+    }
+    .img-app {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .img-app img {
+        width: 10%;
+        height: auto;
     }
 }
 @media screen and (max-width: 670px) {
@@ -583,7 +659,8 @@ h4{
         margin: 0 auto;
     }
     .gallery-text{
-        width: 50%
+        width: 70%;
+        font-size: 16px;
     }
      .gallery-container img {
          width: 100%;
@@ -591,6 +668,16 @@ h4{
          flex-direction: column;
          align-items: center;
      }
+    .img-app {
+        width: 300px;       /* адаптивная ширина */
+
+    }
+
+    .img-app img {
+        max-width: 60px;  /* задаём ограничение по ширине */
+        width: 100%;       /* адаптивная ширина */
+        height: auto;
+    }
 
 }
 
