@@ -554,6 +554,14 @@ h6{
 .testimonials-container{
     width: auto;
     height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 23px;
+    grid-row-gap: 20px;
+}
+.card2{
+    height: 315px;
 }
 .container1{
     margin: 0 23px 0 0;
@@ -566,11 +574,9 @@ h6{
     border-radius: 10px;
     border: 1px solid #DEDEDE
 }
-.card2 {
-    height: 310px;
-}
-.card-top{
-    margin: 20px 0 0 0 ;
+
+.testimonials-card:nth-child(4) {
+    transform: translateY(-20px);
 }
 .avatar{
     display: flex;
@@ -1089,9 +1095,7 @@ h6{
     .testimonials-author-coment{
         width: 250px;
     }
-    .card2{
-        height: auto;
-    }
+
 }
 
 @media screen and (max-width: 425px) {
