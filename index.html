@@ -19,9 +19,12 @@
             <nav class="main-nav">
                 <ul class="nav-list">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#FEATURES">Features</a></li>
+                    <li><a href="#Contents">Contents</a></li>
+                    <li><a href="#Gallery">Gallery</a></li>
+                    <li><a href="#Partners">Partners</a></li>
+                    <li><a href="#Testimonials">Testimonials</a></li>
+                    <li><a href="#Contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="user-controls">
@@ -30,6 +33,20 @@
                     <img src="assets/menu.svg" loading="lazy">
                 </div>
             </div>
+            <aside class="sidebar">
+                <svg class="close-ico" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <br>
+                <p><a href="#">Home</a></p>
+                <p><a href="#FEATURES">Features</a></p>
+                <p><a href="#Contents">Contents</a></p>
+                <p><a href="#Gallery">Gallery</a></p>
+                <p><a href="#Partners">Partners</a></p>
+                <p><a href="#Testimonials">Testimonials</a></p>
+                <p><a href="#Contact">Contact</a></p>
+            </aside>
         </div>
 
         <section class="hero">
@@ -57,7 +74,7 @@
 
 <section class="features">
     <div class="features-wrapper">
-        <div class="features-header">
+        <div class="features-header" id="FEATURES">
             <h2 class="features-title">FEATURES</h2>
             <p class="features-description">Most calendars are designed for teams. Slate is designed for
                 freelancers who want a simple way to plan their schedule.</p>
@@ -106,7 +123,7 @@
 </section>
 
 <section class="content">
-    <div class="content-header">
+    <div class="content-header" id="Contents">
         <h3>Contents</h3>
         <p class="content-description">
             We focus on ergonomics and meeting you where you work.
@@ -147,7 +164,7 @@
     </div>
 </section>
 <section class="gallery">
-    <div class="gallery-wrapper">
+    <div class="gallery-wrapper" id="Gallery">
         <div class="gallery-content">
             <div class="gallery-header">
                 <h4>Gallery</h4>
@@ -173,7 +190,7 @@
     </div>
 </section>
 <section class="partners-section">
-    <div class="partners-wrapper">
+    <div class="partners-wrapper" id="Partners">
         <div class="partners-info">
             <h5>
                 Partners
@@ -195,7 +212,7 @@
     </div>
 </section>
 <section class="testimonials-section">
-    <div class="testimonials-wrapper">
+    <div class="testimonials-wrapper" id="Testimonials">
         <h6>Testimonials</h6>
         <div class="testimonials-content">
             <div class="testimonials-container">
@@ -275,7 +292,7 @@
                     Try For Free
                 </button>
             </div>
-            <div class="feature-img">
+            <div class="feature-img" id="Contact">
                 <img src="/assets/card.svg" alt="card-img">
             </div>
             <div class="feature-img2">
@@ -333,6 +350,8 @@
             </div>
         </div>
     </div>
-</footer>
+    </footer>))
+    <script src="script/sidebar.js"></script>
+    <script src="script/scrol-menu.js"></script>
 </body>
 </html>

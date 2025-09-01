@@ -20,6 +20,7 @@ html {
 }
 
 .site-header {
+
     height: auto;
 }
 
@@ -27,6 +28,16 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: transform 0.4s ease;
+    background-color: rgba(0, 0, 0,.4);
+}
+.header-container.hide {
+    transform: translateY(-100%);
 }
 
 .logo {
@@ -40,7 +51,8 @@ html {
 }
 
 .main-nav {
-    margin: 0 10%;
+    margin: 0 5%;
+
 }
 
 .nav-list {
@@ -50,8 +62,22 @@ html {
     margin-top: 37.5px;
     padding: 0;
 }
+.nav-list a{
+    display: inline-block;
+    transform: scale(1);
+    transition: transform 0.2s,color 0.2s;
+}
+.nav-list  a:hover{
+    transform: scale(1.2);
+    transition: transform 0.2s,color 0.2s;
+    color: #535bf2;
+}
+
+.close-ico{
+    margin: 10px 5px;
+}
 .nav-list li a{
-    margin: 0 20px;
+    margin: 0 10px;
 }
 ul li a {
     text-decoration: none;
@@ -80,7 +106,9 @@ ul li a {
     position: relative;
     overflow: hidden;
 }
-
+.login-button:hover {
+    box-shadow:  0 0 0 2px #1a1a1a, 0 0 0 4px white;
+}
 /* HERO section */
 
 .hero-content {
@@ -138,7 +166,11 @@ ul li a {
     line-height: 25px;
     box-shadow: 0 4px 31px 0 #00000026;
     border: none;
+    transition: all 0.4s ease;
     margin: 0 35px 0 0;
+}
+.cta-free:hover {
+    box-shadow:   0 0 0 2px #1a1a1a, 0 0 0 4px #4452FE;
 }
 
 .cta-learn {
@@ -149,10 +181,13 @@ ul li a {
     background-color: #181818;
     border: 1px solid #FFFFFF;
     box-shadow: 0 4px 31px 0 #00000026;
+    transition: all 0.4s ease;
+}
+.cta-learn:hover {
+    box-shadow:    0 0 0 2px #1a1a1a, 0 0 0 4px #FFFFFF;
 }
 
 /* Banner */
-
 .hero-banner {
     position: relative;
     width: 100%;
@@ -351,7 +386,11 @@ h3{
     font-size: 17px;
     line-height: 25px;
     box-shadow: 0 4px 31px 0 #00000026;
+    transition: all 0.4s ease;
     border: none;
+}
+.form-btn:hover {
+    box-shadow: 0 0 0 2px white, 0 0 0 4px #4452FE;
 }
 .form-image {
     margin: 50px 0 0 0
@@ -456,7 +495,9 @@ h4{
     font-weight: 500;
     font-size: 17px;
     line-height: 25px;
-
+}
+.gallery-btn:hover {
+    box-shadow: 0 0 0 2px #1a1a1a, 0 0 0 4px #FFFFFF;
 }
 /*Partners-section*/
 .partners-section{
@@ -528,7 +569,9 @@ h5{
     font-size: 17px;
     line-height: 25px;
 }
-
+.post-btn:hover {
+    box-shadow: 0 0 0 2px #1a1a1a, 0 0 0 4px #FFFFFF;
+}
 .testimonials-wrapper{
     margin: 100px 0 0 0;
     color: #FFFFFF;
@@ -649,8 +692,11 @@ h6{
     font-weight: 500;
     font-size: 17px;
     line-height: 25px;
-    box-shadow: 0 4px 31px 0 #00000026;
     border: none;
+    transition: all 0.4s ease;
+}
+.feature-text button:hover {
+    box-shadow: 0 0 0 2px #343434, 0 0 0 4px #4452FE;
 }
 .feature-img img{
     width: 100%;
@@ -748,7 +794,46 @@ h6{
     padding: 20px 0;
 
 }
-.footer-img img{
+.sidebar {
+    width: 120px;
+    height: 100%;
+    z-index: 100;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    opacity: 0;
+    transform: translateX(-100%);
+    pointer-events: none; /* чтобы не кликалось, пока скрыто */
+    transition: all 0.4s ease;
+}
+/* когда sidebar активен */
+.sidebar.active {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+.sidebar{
+    display: none;
+
+}
+.sidebar a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.sidebar p{
+    margin: 50px 10px;
+}
+.sidebar a{
+    display: inline-block;
+    transform: scale(1);
+    transition: transform 0.2s,color 0.2s;
+}
+.sidebar a:hover{
+    transform: scale(1.2);
+    transition: transform 0.2s,color 0.2s;
+    color: #535bf2;
 }
 @media screen and (max-width: 1370px) {
     .feature-text p {
@@ -868,7 +953,10 @@ h6{
         text-align: center;
         width: auto;
     }
-
+    .sidebar{
+        display: block;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
 }
 
 @media screen and (max-width: 980px) {
